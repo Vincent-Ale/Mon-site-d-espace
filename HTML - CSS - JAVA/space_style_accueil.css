@@ -1,0 +1,86 @@
+h1 {
+
+    text-align: center;
+}
+
+img {
+
+    display: block;
+    margin: auto;
+}
+
+.image-hero {
+    background-image: url(file:///C:/Users/Acs/Desktop/Formation%20Dev/Formation/Projet%20espace/HTML%20-%20CSS%20-%20JAVA/nasa-yZygONrUBe8-unsplash.jpg);
+    height: 500px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titre-hero {
+    backdrop-filter: brightness(40%);
+
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 1;
+    color: white;
+    font-size: 128px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    /* padding-top: 8rem;*/
+}
+
+.phrase-hero {
+
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.image-container-solar {
+
+    position: relative;
+    margin-top: 50px;
+}
+
+.image-text-solar {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: white;
+    font-size: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.boutonrouge {
+    
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    background-color: rgba(165, 36, 32, 1);
+    border: none;
+    color: white;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    border-radius: 2rem;
+
+}
