@@ -28,6 +28,7 @@ img {
     justify-items: center;
     flex-direction: column;
     justify-content: center;
+    z-index: 2;
 }
 
 .titre-hero {
@@ -36,7 +37,6 @@ img {
     /* top: 50%; */
     /* left: 50%; */
     /* transform: translate(-50%, -50%); */
-    z-index: 1;
     color: white;
     font-size: 128px;
     font-family: Arial, Helvetica, sans-serif;
@@ -50,7 +50,6 @@ img {
 
     display: flex;
     justify-content: center;
-    z-index: 1;
     color: white;
     font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
@@ -75,7 +74,6 @@ img {
 
 .image-text-solar {
 
-    z-index: 2;
     display: flex;
     justify-content: center;
     color: white;
@@ -86,6 +84,74 @@ img {
     -webkit-text-stroke-color: black;
     paint-order: stroke;
     margin-top: 100px;
+}
+
+#popup-overlay {
+
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;    
+    display: none;
+}
+#popup-overlay.open {
+
+    display: block; !important;
+}
+
+.popup-content {
+
+    max-width: 1600px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-exit {
+
+    position: absolute;
+    top: -20px;
+    right: -50px;
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border-color: white;
+    border-style: groove;
+}
+
+.button {
+    
+    position: relative;
+    width: 409px;
+    height: 68px;
+    background-color: rgba(165, 36, 32, 1);
+    border: none;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.button:active{
+
+    top: 8px;
 }
 
 .boutonrouge {
@@ -107,11 +173,15 @@ img {
     margin-bottom: 100px;
 }
 
+.boutonrouge:active{
+
+    top: 8px;
+}
+
 .carte {
 
     border-radius: 3rem;
     border-color: rgba(165, 36, 32, 1);
-    
 }
 
 .dropdown {
