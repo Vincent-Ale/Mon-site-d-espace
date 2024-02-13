@@ -133,6 +133,7 @@ img {
 
 .button {
     
+    cursor: pointer;
     position: relative;
     width: 409px;
     height: 68px;
