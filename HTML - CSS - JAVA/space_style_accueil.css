@@ -10,7 +10,7 @@ img {
 }
 
 .image-hero {
-    background-image: url(file:///C:/Users/Acs/Desktop/Formation%20Dev/Formation/Projet%20espace/HTML%20-%20CSS%20-%20JAVA/nasa-yZygONrUBe8-unsplash.jpg);
+    background-image: url("nasa-yZygONrUBe8-unsplash2.jpg");
     height: 500px;
     display: flex;
     justify-items: center;
@@ -19,8 +19,7 @@ img {
 }
 
 .titre-hero {
-    backdrop-filter: brightness(40%);
-
+    
     /* position: absolute; */
     /* top: 50%; */
     /* left: 50%; */
@@ -48,39 +47,49 @@ img {
 
 .image-container-solar {
 
-    position: relative;
+    background-image: url("système-solaire.jpg");
+    background-position: center;
+    margin-left: 161px;
+    margin-right: 161px;
     margin-top: 50px;
+    height: 500px;
+    z-index: 2;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .image-text-solar {
 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     z-index: 2;
+    display: flex;
+    justify-content: center;
     color: white;
-    font-size: 80px;
+    font-size: 83px;
     font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke;
 }
 
 .boutonrouge {
     
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
+    position: relative;
+    
+    width: 409px;
+    height: 68px;
     background-color: rgba(165, 36, 32, 1);
     border: none;
     color: white;
-    font-size: 30px;
+    font-size: 48px;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 6px 15px;
+    padding-top: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    margin: 4px 2px;
     border-radius: 2rem;
+    margin: auto;
 
 }
