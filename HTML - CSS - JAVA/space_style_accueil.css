@@ -1,6 +1,18 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 h1 {
 
     text-align: center;
+    background-color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url("logo.png");
 }
 
 img {
@@ -95,14 +107,15 @@ img {
 
 .dropdown {
     max-width: 300px;
-    height: 63px;
+    height: 65px;
     border-radius: 5px;
-    margin: 0px auto;
+    margin-top: 15px;
     color: #f1f1f1;
     background: black;
     transition: height 0.4s ease-in-out;
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    position: fixed;
+    position: absolute;
+    
 }
 
 .bloc-top {
@@ -111,7 +124,8 @@ img {
     width: 100%;
     border: none;
     outline: none;
-    font-size: 20px;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -121,7 +135,7 @@ img {
     border-radius:  5px;
 }
 .bloc-top img {
-    width: 20px
+    width: 30px
 }
 
 .bloc-links {
