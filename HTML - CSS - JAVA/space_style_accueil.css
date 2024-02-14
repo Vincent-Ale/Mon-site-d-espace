@@ -275,3 +275,43 @@ img {
 
     top: 8px;
 }
+
+.text-article02 {
+
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    position: relative;
+}
+
+.text-article03 {
+
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    position: relative;
+}
+
+.container2 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 2;
+}
+
+.text-left {
+
+    display: grid;
+    grid-template-columns: 7% 40% 6% 40% 7%;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.img01 {
+
+    grid-column-start: 4;
+}
