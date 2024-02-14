@@ -7,49 +7,59 @@
     </head>
 
     <body>
-
-        <div class="dropdown">
-            <button class="bloc-top">
-                <img src="arrowdown.png">
-                <span>&nbsp;EXPLORE</span>
-            </button>
-            <div class="bloc-links">
-                <ul>
-                    <li>
-                        <a href="#">Lien 1</a>
-                    </li>
-                    <li>
-                        <a href="#">Lien 2</a>
-                    </li>
-                    <li>
-                        <a href="#">Lien 3</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <h1><strong>E-SPACE</strong></h1>
-
-        <div class="image-hero">
-            <!-- <div class="img-hero"><img src="nasa-yZygONrUBe8-unsplash.jpg" alt="image_hero"></div> -->
-            <div class="titre-hero"><strong>Les Mystères de L'espace</strong></div>
-                <div class="phrase-hero"><strong>Plongez à la découverte de notre univers...</strong></div>
-            </div>
-        </div>
         
-        <div id="popup-overlay">
-            <div class="popup-content">
-                <img src="système-solaire-détail2.jpg" alt="solarmap">
-                <a href="javascript:void(0)" onclick="togglepopup()" class="popup-exit">X</a>
+        <header>
+            <nav class="dropdown">
+                <button class="bloc-top">
+                    <img src="arrowdown.png">
+                    <span>&nbsp;EXPLORE</span>
+                </button>
+                <div class="bloc-links">
+                    <ul>
+                        <li>
+                            <a href="#">Lien 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Lien 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Lien 3</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <h1><strong>E-SPACE</strong></h1>
+            </header>
+
+        <main>
+            <div class="image-hero">
+                <!-- <div class="img-hero"><img src="nasa-yZygONrUBe8-unsplash.jpg" alt="image_hero"></div> -->
+                <div class="titre-hero"><strong>Les Mystères de L'espace</strong></div>
+                    <div class="phrase-hero"><strong>Plongez à la découverte de notre univers...</strong></div>
+                
+            </div>
+        </main>
+        <section>    
+            <div id="popup-overlay">
+                <div class="popup-content">
+                    <img src="système-solaire-détail2.jpg" alt="solarmap">
+                    <a href="javascript:void(0)" onclick="togglepopup()" class="popup-exit">X</a>
+                </div>
+
+            </div>
+        </section>    
+
+            <div class="image-container-solar">
+                <p class="image-text-solar"><strong>Découvre le Sytème Solaire</strong></p>
+                <!-- <a class="boutonrouge" href="système solaire détail.jpg" class="carte"><strong>Ouvrir La Carte</strong></a> -->
+                <button class="button" onclick="togglepopup()"><strong>Ouvrir la Carte</strong></button>
             </div>
 
-        </div>
-
-        <div class="image-container-solar">
-            <p class="image-text-solar"><strong>Découvre le Sytème Solaire</strong></p>
-            <!-- <a class="boutonrouge" href="système solaire détail.jpg" class="carte"><strong>Ouvrir La Carte</strong></a> -->
-            <button class="button" onclick="togglepopup()"><strong>Ouvrir la Carte</strong></button>
-        </div>
+            <div class="article01">
+                <img class="imgart01" src="fusée.png" alt="article01img">
+                <p class="text-article01"><strong>Historique des Missions de la NASA</strong></p>
+                <button class="button2"><strong>En Savoir Plus</strong></button>
+            </div>
 
 
 
