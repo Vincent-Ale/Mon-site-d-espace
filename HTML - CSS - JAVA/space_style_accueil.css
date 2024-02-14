@@ -218,20 +218,37 @@ img {
     padding-bottom: 25px;
 }
 
-.article01 {
+.text-right {
 
     margin-bottom: 50px;
+    z-index: 2;
+    position: relative;
+    display: grid;
+    grid-template-columns: 60% 30% 10%;
+    grid-template-rows: 10% 80% 10%;
+    background-image: url(fusée.png);
+    height: 500px;
+}
+
+.container1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.text-article01 {
+
+    text-align: center;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 80px;
-    height: 500px;
-    z-index: 2;
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
-    justify-content: center;
-    text-align: right;
+    position: relative;
 }
+
 .button2 {
     
     cursor: pointer;
@@ -247,9 +264,6 @@ img {
     text-decoration: none;
     display: inline-block;
     border-radius: 2rem;
-    margin: auto;
-    margin-right: 150px;
-    margin-bottom: 50px;
 }
 
 .button2:hover {
