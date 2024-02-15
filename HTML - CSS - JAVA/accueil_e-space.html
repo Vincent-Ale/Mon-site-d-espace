@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>e-space</title>
+    <link rel="stylesheet" href="space_style_accueil.css">
+</head>
+
+<body class="acceuil_html">
+
+    <header>
+        <nav class="dropdown">
+            <button class="bloc-top"><img src="images/arrowdown.png">&nbspEXPLORE</button>
+            <div class="bloc-links">
+                <ul>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1><strong>E-SPACE</strong></h1>
+        <div class="image-hero">
+            <div class="titre-hero"><strong>Les Mystères de L'espace</strong></div>
+            <div class="phrase-hero"><strong>Plongez à la découverte de notre univers...</strong></div>
+        </div>
+    </header>
+
+    <main>
+        <section>    
+            <div id="popup-overlay">
+                <div class="popup-content">
+                    <img src="images/système-solaire-détail2.jpg" alt="solarmap">
+                    <a href="javascript:void(0)" onclick="togglepopup()" class="popup-exit">X</a>
+                </div>
+            </div>
+        </section>    
+
+        <section>
+            <div class="image-container-solar" style="background-image: url('images/système-solaire.jpg');">
+                <p class="image-text-solar">Découvre le Sytème Solaire</p>
+                <button onclick="togglepopup()">Ouvrir la Carte</button>
+            </div>
+        </section>
+
+        <!-- comprend les articles principaux -->
+        <section class="articles">
+            <div class="text-right" style="background-image: url('images/fusee.png');">
+                <div>
+                    <h2>Historique des Missions de la NASA</h2>
+                    <button>En Savoir Plus</button>
+                </div>
+            </div>
+
+            <div class="text-left">
+                <div>
+                    <h2>James WEBB</h2>
+                    <p>Le Télescope le plus puissant jamais envoyé dans l'espace.</p>
+                    <button>En Savoir Plus</button>
+                </div>
+                <img src="images/james-webb.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="text-right" style="background-image: url('images/jvspace.jpg');">
+                <div>
+                    <h2>Les Jeux Vidéo <br>et L'espace</h2>
+                    <button>En Savoir Plus</button>
+                </div>
+            </div>
+
+            <div class="text-left">
+                <div>
+                    <h2>Modèles de Fusées</h2>
+                    <p>Retrouvez tous les plans en détails.</p>
+                    <button>En Savoir Plus</button>
+                </div>
+                <img src="images/blueprint2.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="text-right" style="background-image: url('images/bgrimg.jpg');">
+                <div>
+                    <h2>Galerie d'images</h2>
+                    <button>En Savoir Plus</button>
+                </div>
+            </div>
+
+            <div class="text-left">
+                <div>
+                    <h2>Devenir Astronaute</h2>
+                    <p>Les prérequis, les conditions physiques et l'entraînement.</p>
+                    <button>En Savoir Plus</button>
+                </div>
+                <img src="images/astro.jpg" alt="">
+            </div>
+        </section>
+
+        <section class="articles">
+            <div class="text-right" style="background-image: url('images/seul.jpg');">
+                <div>
+                    <h2>Sommes-nous seuls dans l'Univers?</h2>
+                    <button>En Savoir Plus</button>
+                </div>
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+    </main>
+
+    <footer>
+
+    <h4>Footer</h4>
+        <!-- #################################################### -->
+    </footer>
+</body>
+
+</html>
