@@ -80,9 +80,6 @@ button:active {
     cursor: pointer;
     border-radius:  5px;
 }
-.bloc-top:active {
-    top: 0px;
-}
 
 .bloc-top:hover {
     background-color: transparent;
@@ -120,7 +117,7 @@ h1 {
     color: white;
     margin-bottom: 0px;
     margin-top: 0px;
-    background-image: url("images/logo.png");
+    background-image: url("logo.png");
 }
 
 .phrase-hero {
@@ -133,7 +130,7 @@ h1 {
 }
 
 .image-hero {
-    background-image: url("images/nasa-yZygONrUBe8-unsplash2.jpg");
+    background-image: url("nasa-yZygONrUBe8-unsplash2.jpg");
     height: 500px;
     display: flex;
     justify-items: center;
