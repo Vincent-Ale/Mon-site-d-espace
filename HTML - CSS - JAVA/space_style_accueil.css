@@ -81,6 +81,10 @@ button:active {
     border-radius:  5px;
 }
 
+.bloc-top:active {
+    top: 0px;
+}
+
 .bloc-top:hover {
     background-color: transparent;
 }
