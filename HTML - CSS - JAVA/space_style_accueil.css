@@ -10,7 +10,7 @@
     font-weight: 600;
 }
 
-main{
+body{
     background-color: whitesmoke;
 }
 
@@ -198,15 +198,15 @@ h1 {
 
 .image-container-solar {
 
-    background-image: url("système-solaire.jpg");
+    /* background-image: url("système-solaire.jpg"); */
     background-position: center;
-    margin-left: 161px;
-    margin-right: 161px;
+    background-repeat: no-repeat;
+    /* margin-left: 161px;
+    margin-right: 161px;*/
     margin-top: 50px;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px; */
     height: 500px;
     display: flex;
-    justify-items: center;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
@@ -223,7 +223,6 @@ h1 {
     -webkit-text-stroke-width: 3px;
     -webkit-text-stroke-color: black;
     paint-order: stroke;
-    margin-top: 100px;
 }    
 
 /*
