@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8" />
+    <title>e-space</title>
+    <link rel="stylesheet" href="space_style_accueil.css">
+</head>
+
+
+
+<body class="acceuil_html">
+
+    <header>
+        <nav class="dropdown">
+            <button class="bloc-top"><img src="arrowdown.png">&nbspEXPLORE</button>
+            <div class="bloc-links">
+                <ul>
+                    <li><a href="#">Lien 1</a></li>
+                    <li><a href="#">Lien 2</a></li>
+                    <li><a href="#">Lien 3</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h1><strong>E-SPACE</strong></h1>
+        <div class="image-hero">
+            <div class="titre-hero"><strong>Les Mystères de L'espace</strong></div>
+            <div class="phrase-hero"><strong>Plongez à la découverte de notre univers...</strong></div>
+        </div>
+    </header>
+
+    <main>
+        <section>    
+            <div id="popup-overlay">
+                <div class="popup-content">
+                    <img src="système-solaire-détail2.jpg" alt="solarmap">
+                    <a href="javascript:void(0)" onclick="togglepopup()" class="popup-exit">X</a>
+                </div>
+            </div>
+        </section>    
+
+        <section>
+            <div class="image-container-solar">
+                <p class="image-text-solar"><strong>Découvre le Sytème Solaire</strong></p>
+                <button onclick="togglepopup()">Ouvrir la Carte</button>
+            </div>
+        </section>
+        <!-- comprend les articles principaux -->
+        <section class="articles">
+            <div class="text-right" style="background-image: url('fusée.png');">
+                <div>
+                    <h2>Historique des Missions de la NASA</h2>
+                    <button>En Savoir Plus</button>
+                </div>
+            </div>
+
+            <div class="text-left">
+                <div>
+                    <h2>James WEBB</h2>
+                    <p>Le Télescope le plus puissant jamais envoyé dans l'espace.</p>
+                    <button>En Savoir Plus</button>
+                </div>
+                <img src="james-webb.jpg" alt="">
+            </div>
+        </section>
+
+        <script src="app.js"></script>
+    </main>
+
+    <footer>
+        <!-- #################################################### -->
+    </footer>
+</body>
+
+</html>

@@ -1,6 +1,111 @@
-* {
+
+/*
+#################################   GLOBAL   #################################
+*/
+
+*{
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+main{
+    background-color: whitesmoke;
+}
+
+h2{
+    font-size: 80px;
+}
+
+/*
+#################################   BOUTON   #################################
+*/
+
+button{
+
+    cursor: pointer;
+    position: relative;
+    width: 409px;
+    height: 68px;
+    background-color: rgba(165, 36, 32, 1);
+    border: none;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+button:hover { 
+    background-color:  rgb(216, 27, 20);
+}
+
+button:active {
+    top: 8px;
+}
+
+/*
+#################################   HEADER   #################################
+*/
+
+.dropdown {
+    max-width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #f1f1f1;
+    background: black;
+    transition: height 0.4s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    
+}
+
+.bloc-top {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-radius:  5px;
+}
+
+.bloc-top:hover {
+    background-color: transparent;
+}
+
+.bloc-top img {
+    width: 30px
+}
+
+.bloc-links {
+    padding: 0 22px;
+}
+
+.bloc-links li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.bloc-links li a {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-left: 5px;
+}
+
+.bloc-links li:last-child{
+    padding-bottom: 25px;
 }
 
 h1 {
@@ -15,10 +120,13 @@ h1 {
     background-image: url("logo.png");
 }
 
-img {
+.phrase-hero {
 
-    display: block;
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .image-hero {
@@ -32,59 +140,16 @@ img {
 }
 
 .titre-hero {
-    
-    /* position: absolute; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* transform: translate(-50%, -50%); */
     color: white;
     font-size: 128px;
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
-    /* text-align: center; */
-    justify-content: center;
-    /* padding-top: 8rem;*/
-}
-
-.phrase-hero {
-
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.image-container-solar {
-
-    background-image: url("système-solaire.jpg");
-    background-position: center;
-    margin-left: 161px;
-    margin-right: 161px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    height: 500px;
-    z-index: 2;
-    display: flex;
-    justify-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
-.image-text-solar {
-
-    display: flex;
-    justify-content: center;
-    color: white;
-    font-size: 83px;
-    font-family: Arial, Helvetica, sans-serif;
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 3px;
-    -webkit-text-stroke-color: black;
-    paint-order: stroke;
-    margin-top: 100px;
-}
+/*
+#########################   CARTE SYSTEME SOLAIRE   ##########################
+*/
 
 #popup-overlay {
 
@@ -129,189 +194,89 @@ img {
     border-radius: 50px;
     border-color: white;
     border-style: groove;
-}
+    }
 
-.button {
-    
-    cursor: pointer;
-    position: relative;
-    width: 409px;
-    height: 68px;
-    background-color: rgba(165, 36, 32, 1);
-    border: none;
-    color: white;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 2rem;
-    margin: auto;
-    margin-bottom: 100px;
-}
+.image-container-solar {
 
-.button:hover {
-
-    background-color:  rgb(216, 27, 20);
-}
-
-.button:active{
-
-    top: 8px;
-}
-
-.carte {
-
-    border-radius: 3rem;
-    border-color: rgba(165, 36, 32, 1);
-}
-
-.dropdown {
-    max-width: 300px;
-    height: 65px;
-    border-radius: 5px;
-    margin-top: 15px;
-    color: #f1f1f1;
-    background: black;
-    transition: height 0.4s ease-in-out;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-    position: absolute;
-    
-}
-
-.bloc-top {
-    padding: 20px;
-    display: block;
-    width: 100%;
-    border: none;
-    outline: none;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: black;
-    color: #f1f1f1;
-    cursor: pointer;
-    border-radius:  5px;
-}
-.bloc-top img {
-    width: 30px
-}
-
-.bloc-links {
-    padding: 0 22px;
-}
-
-.bloc-links li {
-    list-style-type: none;
-    padding: 5px 0;
-}
-
-.bloc-links li a {
-    font-size: 18px;
-    color: #f1f1f1;
-    margin-left: 5px;
-}
-
-.bloc-links li:last-child{
-    padding-bottom: 25px;
-}
-
-.text-right {
-
+    background-image: url("système-solaire.jpg");
+    background-position: center;
+    margin-left: 161px;
+    margin-right: 161px;
+    margin-top: 50px;
     margin-bottom: 50px;
-    z-index: 2;
-    position: relative;
-    display: grid;
-    grid-template-columns: 60% 30% 10%;
-    grid-template-rows: 10% 80% 10%;
-    background-image: url(fusée.png);
     height: 500px;
-}
-
-.container1 {
-
     display: flex;
+    justify-items: center;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    grid-column-start: 2;
-    grid-row-start: 2;
 }
 
-.text-article01 {
-
-    text-align: center;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    position: relative;
-}
-
-.button2 {
-    
-    cursor: pointer;
-    position: relative;
-    width: 409px;
-    height: 68px;
-    background-color: rgba(165, 36, 32, 1);
-    border: none;
-    color: white;
-    font-size: 48px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    border-radius: 2rem;
-}
-
-.button2:hover {
-
-    background-color:  rgb(216, 27, 20);
-}
-
-.button2:active{
-
-    top: 8px;
-}
-
-.text-article02 {
-
-    text-align: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 80px;
-    position: relative;
-}
-
-.text-article03 {
-
-    text-align: center;
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 48px;
-    position: relative;
-}
-
-.container2 {
+.image-text-solar {
 
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    grid-column-start: 2;
+    justify-content: center;
+    color: white;
+    font-size: 83px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke;
+    margin-top: 100px;
+}    
+
+/*
+#################################   MAIN  #################################
+*/
+
+.articles{
+    &>div{
+        height: 500px;
+        display:flex;
+        flex-direction: row;
+        margin-top: 50px;
+
+        &>div{
+            margin-top: 0px;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    }
+    &>.text-right{
+        justify-content: flex-end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &>div{
+            background-color: transparent;
+            margin-right: 5%;
+            width: 680px;
+            &>h2{
+                color: white;
+                background-color: transparent;
+            }
+        }
+    }
+    &>.text-left{
+        justify-content:center;
+        padding-right: 5%;
+        &>div{
+            width: 780px;
+            padding-right: 10%;
+            padding-left: 10%;
+            &>p{
+                font-size: 48px;
+            }
+        }
+    }
 }
 
-.text-left {
 
-    display: grid;
-    grid-template-columns: 7% 40% 6% 40% 7%;
-    background-color: white;
-    margin-bottom: 50px;
-}
 
-.img01 {
 
-    grid-column-start: 4;
-}
+
+
