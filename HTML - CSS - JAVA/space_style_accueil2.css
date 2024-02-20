@@ -202,28 +202,76 @@ h1 {
     justify-content: center;
     align-items: center;
     transform: scale(0.2);
-    font-size: 5em;
-    
+    font-size: 4em;
 }
-
-/* 
-.carte-solaire {
-    position: absolute;
-
-    
-} */
-
-
-/* .planet img {
-
-    transform: scale(1);
-} */
 
 .planet img:hover {
     
     filter: drop-shadow(0 0 50px white);
     cursor: pointer;
 }
+
+.planet-venus {
+
+    max-width: 80px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    font-size: 4em;
+    padding-left: 20px;
+    padding-right: 15px;
+}
+.planet-venus img:hover {
+    
+    filter: drop-shadow(0 0 50px white);
+    cursor: pointer;
+}
+
+.planet-mars {
+
+    max-width: 80px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    font-size: 4em;
+    padding-right: 5%;
+}
+.planet-mars img:hover {
+    
+    filter: drop-shadow(0 0 50px white);
+    cursor: pointer;
+}
+
+.planet-saturn {
+
+    max-width: 180px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    font-size: 4em;
+    padding-left: 5%;
+}
+.planet-saturn img:hover {
+    
+    filter: drop-shadow(0 0 50px white);
+    cursor: pointer;
+}
+
 
 .text-planet {
     
@@ -240,10 +288,10 @@ h1 {
     right: 0px;
     text-decoration: none;
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-    padding: 5px 20px;
+    padding: 5px 15px;
     border-radius: 50px;
     border-color: white;
     border-style: groove;
