@@ -84,17 +84,17 @@ button:active {
 }
     
   .dropdown:hover .dropdown-content {
-    margin-top: 20px;
+    padding-top: 20px;
     text-transform: uppercase;
     border-right: 5px solid white;
-    margin-left: 2em;
+    padding-left: 2em;
     padding-right: 2em;
   }
   
   .dropdown-content a {
     color: rgb(255, 255, 255);
-    padding: 12px 16px;
-    font-size: 1.5em;
+    padding: 12px 10px;
+    font-size: 1.2em;
     text-decoration: none;
     display: block;
   }
@@ -105,7 +105,7 @@ button:active {
     background-color: #000000;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1920px;
+    width: calc(100vw - 17px);
     height: 500px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -116,7 +116,7 @@ button:active {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    gap: 200px;
+    gap: 65px;
   }
   
 .news {
@@ -130,8 +130,8 @@ button:active {
 }
 
 .news img {
-    height: 240px;
-    width: 340px;
+    height: 336px;
+    width: 476px;
 }
 
 /*
