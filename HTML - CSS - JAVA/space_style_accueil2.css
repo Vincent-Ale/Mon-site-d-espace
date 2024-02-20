@@ -51,60 +51,88 @@ button:active {
 #################################   HEADER   #################################
 */
 
+.dropbtn:active {
+    top: 0px;
+}
+
 .dropdown {
     position: absolute;
     display: inline-block;
     margin-top: 15px;
+    margin-left: 0px;
 }
 
 .dropbtn {
-    background-color: #000000;
+    background-color: transparent;
     color: white;
-    padding-top: 45px;
+    margin-top: 50px;
+    margin-left: 10px;
     font-size: 2em;
     border: none;
     text-transform: uppercase;
     border-radius: 0%;
     text-align: left;
-
   }
 
   .dropbtn:hover {
     background-color: transparent;
+    cursor: pointer;
   }
 
   .dropbtn img {
     width: 30px
 }
     
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #000000;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+  .dropdown:hover .dropdown-content {
+    margin-top: 20px;
     text-transform: uppercase;
+    border-right: 5px solid white;
+    margin-left: 2em;
+    padding-right: 2em;
   }
   
   .dropdown-content a {
     color: rgb(255, 255, 255);
     padding: 12px 16px;
+    font-size: 1.5em;
     text-decoration: none;
     display: block;
   }
   
-  /* .dropdown-content a:hover {
+  .news-menu {
+    display: none;
+    position: absolute;
     background-color: #000000;
-} */
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1920px;
+    height: 500px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-transform: uppercase;
+  }
+
+  .dropdown:hover .news-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    gap: 200px;
+  }
   
-  .dropdown:hover .dropdown-content {
-    display: block;
+.news {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
 }
-  
-  /* .dropdown:hover .dropbtn {
-    background-color: #ffffff;
-} */
+
+.news img {
+    height: 240px;
+    width: 340px;
+}
 
 /*
 #################################   TITRE & HERO   #################################
