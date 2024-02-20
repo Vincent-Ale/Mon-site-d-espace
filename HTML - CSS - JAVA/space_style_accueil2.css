@@ -1,0 +1,338 @@
+
+/*
+#################################   GLOBAL   #################################
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+h2{
+    font-size: 80px;
+}
+
+/*
+#################################   BOUTON   #################################
+*/
+
+button{
+
+    cursor: pointer;
+    position: relative;
+    width: 409px;
+    height: 68px;
+    background-color: rgba(165, 36, 32, 1);
+    border: none;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 2rem;
+}
+
+button:hover { 
+    background-color:  rgb(216, 27, 20);
+}
+
+button:active {
+    top: 8px;
+}
+
+/*
+#################################   HEADER   #################################
+*/
+
+.dropdown {
+    max-width: 300px;
+    height: 65px;
+    border-radius: 5px;
+    margin-top: 15px;
+    color: #f1f1f1;
+    background: black;
+    transition: height 0.4s ease-in-out;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    position: absolute;
+    
+}
+
+.bloc-top {
+    padding: 20px;
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: #f1f1f1;
+    cursor: pointer;
+    border-radius:  5px;
+}
+
+.bloc-top:active {
+    top: 0px;
+}
+
+.bloc-top:hover {
+    background-color: transparent;
+}
+
+.bloc-top img {
+    width: 30px
+}
+
+.bloc-links {
+    padding: 0 22px;
+}
+
+.bloc-links li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.bloc-links li a {
+    font-size: 18px;
+    color: #f1f1f1;
+    margin-left: 5px;
+}
+
+.bloc-links li:last-child{
+    padding-bottom: 25px;
+}
+
+h1 {
+
+    text-align: center;
+    background-color: black;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-image: url("images/logo.png");
+}
+
+.phrase-hero {
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image-hero {
+    background-image: url("images/nasa-yZygONrUBe8-unsplash2.jpg");
+    height: 500px;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+}
+
+.titre-hero {
+    color: white;
+    font-size: 128px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+#########################   CARTE SYSTEME SOLAIRE   ##########################
+*/
+
+#popup-overlay {
+
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;    
+    display: none;
+}
+#popup-overlay.open {
+
+    display: block;
+}
+
+.popup-content {
+    
+    max-width: 1600px;
+    width: 100%;
+    max-height: 700px;
+    height: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 2em;
+    border-color: white;
+    background-color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.planet {
+    max-width: 177px;
+    width: 100%;
+    max-height: 350px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0.2);
+    font-size: 5em;
+    
+}
+
+/* 
+.carte-solaire {
+    position: absolute;
+
+    
+} */
+
+
+/* .planet img {
+
+    transform: scale(1);
+} */
+
+.planet img:hover {
+    
+    filter: drop-shadow(0 0 50px white);
+    cursor: pointer;
+}
+
+.text-planet {
+    
+    padding-top: 5%;
+    color: white;
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup-exit {
+
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    text-decoration: none;
+    color: white;
+    font-size: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    padding: 5px 20px;
+    border-radius: 50px;
+    border-color: white;
+    border-style: groove;
+    }
+
+.image-container-solar {
+
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image-text-solar {
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 83px;
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+    paint-order: stroke;
+}    
+
+/*
+#################################   MAIN  #################################
+*/
+
+.articles{
+    &>div{
+        height: 500px;
+        display:flex;
+        flex-direction: row;
+        margin-top: 100px;
+
+        &>div{
+            margin-top: 0px;
+            text-align: center;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+    }
+    &>.text-right{
+        justify-content: flex-end;
+        background-repeat: no-repeat;
+        background-size: cover;
+        &>div{
+            background-color: transparent;
+            margin-right: 5%;
+            width: 680px;
+            &>h2{
+                color: white;
+                background-color: transparent;
+            }
+        }
+    }
+    &>.text-left{
+        justify-content:center;
+        padding-right: 5%;
+        &>div{
+            width: 780px;
+            padding-right: 10%;
+            padding-left: 10%;
+            &>p{
+                font-size: 48px;
+            }
+        }
+    }
+}
+
+/*
+#################################   FOOTER  #################################
+*/
+
+h4 {
+    color: white;
+    font-size: 80px;
+    background-color: black;
+}
+
+
+
+
