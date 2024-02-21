@@ -2,6 +2,9 @@
 /*
 #################################   GLOBAL   #################################
 */
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0px;
@@ -16,6 +19,42 @@ body{
 
 h2{
     font-size: 80px;
+}
+
+/*
+#################################   BOUTON FUSEE   #################################
+*/
+
+.boutonfusee {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    border: none;
+    outline: none;
+    bottom: 5px;
+    right: 8px;
+}
+
+
+.boutontop:hover {
+
+    cursor: pointer;
+    filter: drop-shadow(0 40px 10px #ff8800);
+}
+
+.textfusee {
+
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    color: black;
+    /* text-shadow: 0px 0px 10px #000000;
+    border: 3px solid #8e8e8e;
+    border-radius: 50% 50% 13% 13% / 62% 62% 30% 30% ;
+    background-color: #8e8e8e; */
 }
 
 /*
