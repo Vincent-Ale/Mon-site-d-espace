@@ -35,7 +35,7 @@ h2{
     border: none;
     outline: none;
     bottom: 5px;
-    right: 8px;
+    right: 5px;
 }
 
 
@@ -76,6 +76,7 @@ button{
     text-decoration: none;
     display: inline-block;
     border-radius: 2rem;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 button:hover { 
@@ -388,10 +389,19 @@ h1 img {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 100px;
+    width: 1598px;
     height: 500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.solar-map-img {
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -455,6 +465,10 @@ h1 img {
             }
         }
     }
+}
+
+.text-left img {
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 /*
