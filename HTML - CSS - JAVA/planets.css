@@ -172,6 +172,15 @@ p {
   
 }
 
+.paragraph {
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 75%;
+
+}
+
 .scroll-vertical {
     position: relative;
     display: flex;
@@ -222,10 +231,10 @@ p {
   align-items: stretch;
 }
 
-table.blueTable {
+.blueTable {
   border: 3px solid black;
   background-color: whitesmoke;
-  width: 100%;
+  width: 25%;
   border-collapse: collapse;
   white-space: nowrap;
 
