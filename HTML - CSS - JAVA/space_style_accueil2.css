@@ -2,6 +2,9 @@
 /*
 #################################   GLOBAL   #################################
 */
+html {
+    scroll-behavior: smooth;
+}
 
 *{
     margin: 0px;
@@ -16,6 +19,42 @@ body{
 
 h2{
     font-size: 80px;
+}
+
+/*
+#################################   BOUTON FUSEE   #################################
+*/
+
+.boutonfusee {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    border: none;
+    outline: none;
+    bottom: 5px;
+    right: 5px;
+}
+
+
+.boutontop:hover {
+
+    cursor: pointer;
+    filter: drop-shadow(0 40px 10px #ff8800);
+}
+
+.textfusee {
+
+    position: absolute;
+    bottom: 25px;
+    text-align: center;
+    color: black;
+    /* text-shadow: 0px 0px 10px #000000;
+    border: 3px solid #8e8e8e;
+    border-radius: 50% 50% 13% 13% / 62% 62% 30% 30% ;
+    background-color: #8e8e8e; */
 }
 
 /*
@@ -37,6 +76,7 @@ button{
     text-decoration: none;
     display: inline-block;
     border-radius: 2rem;
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 button:hover { 
@@ -349,10 +389,19 @@ h1 img {
     background-position: center;
     background-repeat: no-repeat;
     margin-top: 100px;
+    width: 1598px;
     height: 500px;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: space-around;
+    box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.solar-map-img {
+
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -416,6 +465,10 @@ h1 img {
             }
         }
     }
+}
+
+.text-left img {
+    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 /*
