@@ -5,6 +5,8 @@
     <meta charset="utf-8" />
     <title>e-space</title>
     <link rel="stylesheet" href="space_style_accueil2.css">
+    <script src="app2.js"></script>
+    <script src="apinasa.js"></script>
 </head>
 
 <body class="acceuil_html">
@@ -25,16 +27,16 @@
                     <a href="#">Contact</a>
                 </div>
                 <div class="news">
-                    <img src="images/james-webb.jpg" alt="imgnews01">
-                    <span>News01</span>
+                    <img id="imgapi1" src="images/james-webb.jpg" alt="imgnews01">
+                    <span id="api1"></span>
                 </div>
                 <div class="news">
-                    <img src="images/james-webb.jpg" alt="imgnews02">
-                    <span>News02</span>
+                    <iframe width="476" height="336" src="https://www.youtube.com/embed/lqQylsc5krg"></iframe>
+                    <span id="api2">The Universe is Calling: Apply to Be a NASA Astronaut</span>
                 </div>
                 <div class="news">
-                    <img src="images/james-webb.jpg" alt="imgnews03">
-                    <span>News03</span>
+                    <img id="imgapi3" src="images/spacex.jpg" alt="imgnews03">
+                    <span id="api3">SpaceX Seen Resuming Starship Launches</span>
                 </div>
             </div>
         </div>
@@ -162,7 +164,6 @@
             </div>
         </section>
 
-        <script src="app2.js"></script>
     </main>
 
     <footer>
