@@ -215,6 +215,8 @@ h1 img {
     flex-direction: column;
     justify-content: center;
     z-index: 2;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .titre-hero {
