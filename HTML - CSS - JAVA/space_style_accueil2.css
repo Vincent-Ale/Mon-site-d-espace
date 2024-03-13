@@ -174,7 +174,7 @@ button:active {
 .news img {
     height: 336px;
     width: 476px;
-    border: 2px solid rgb(171, 171, 171);
+    border: 3px inset rgb(234, 234, 234);
 }
 
 
@@ -393,15 +393,16 @@ h1 img {
 .image-container-solar {
 
     background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
-    margin-top: 100px;
-    width: 1598px;
+    /* margin-top: 100px; */
+    /* width: 1598px; */
+    width: 1600px;
     height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    box-shadow: 5px 5px 15px 5px #000000;
 }
 
 .solar-map-img {
@@ -409,6 +410,8 @@ h1 img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: black;
+    margin-bottom: -100px;
 }
 
 .image-text-solar {
