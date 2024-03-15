@@ -176,47 +176,13 @@ p {
 
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 75%;
+  align-items: center;
 
 }
 
-.scroll-vertical {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
 
 .shadow-img {
   filter: drop-shadow(0px 0px 10px #000000);
-}
-
-.scroll-horizon {
-  width: 1100px;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%, 0%);
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  overflow-x: scroll;
-  overflow: hidden;
-  margin-bottom: 3%;
-  margin-top: 1%;
-  scroll-behavior: smooth;
-}
-
-.page {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.scroll-planets img {
-
-    border: 10px solid black;
 }
 
 
@@ -274,7 +240,30 @@ h4 {
 
 
 .mySwiper{
-  height: 500px;
+  /* height: 1000px; */
+  margin-bottom: 1rem;
+}
+
+.swiper-slide{
+  margin-bottom: 10rem !important;
+}
+
+.container-planet{
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.imgplanet img{
+  filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.img-table{
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  gap: 1rem !important;
 }
 
 .swiper-pagination-clickable {
@@ -287,12 +276,20 @@ h4 {
   text-align: center !important;
   align-items: center !important;
   justify-content: center !important;
+  padding-bottom: 1rem;
+}
+
+.swiper-pagination span:hover{
+  filter: drop-shadow(0px 0px 10px #000000);
 }
 
 .swiper-pagination span{
-  padding: 0 4rem !important;
-  width: 0px !important;
-  height: 0px !important;
+  padding: 0 1rem !important;
+  width: 117px !important;
+  height: 50px !important;
+  display: inline-grid !important;
+  justify-items: center !important;
+  align-content: center !important;
 }
 
 .swiper-pagination-bullet{
