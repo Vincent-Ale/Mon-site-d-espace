@@ -273,5 +273,32 @@ h4 {
 }
 
 
+.mySwiper{
+  height: 500px;
+}
 
+.swiper-pagination-clickable {
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
 
+.swiper-pagination {
+  text-align: center !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.swiper-pagination span{
+  padding: 0 4rem !important;
+  width: 0px !important;
+  height: 0px !important;
+}
+
+.swiper-pagination-bullet{
+  background: none !important;
+}
+
+.swiper-pagination-bullet-active{
+  background: none !important;
+}

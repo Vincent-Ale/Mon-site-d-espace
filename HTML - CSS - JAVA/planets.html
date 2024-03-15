@@ -5,6 +5,9 @@
     <meta charset="utf-8" />
     <title>e-space</title>
     <link rel="stylesheet" href="planets.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 </head>
 
 <body class="planets_html">
@@ -45,7 +48,38 @@
 
     <main>
         <section>
-            <div class="scroll-horizon">
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">Soleil</div>
+                  <div class="swiper-slide">Mercure</div>
+                  <div class="swiper-slide">Vénus</div>
+                  <div class="swiper-slide">Terre</div>
+                  <div class="swiper-slide">Mars</div>
+                  <div class="swiper-slide">Jupiter</div>
+                  <div class="swiper-slide">Saturne</div>
+                  <div class="swiper-slide">Neptune</div>
+                  <div class="swiper-slide">Uranus</div>
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+              <script src="planets.js"></script>
+              <script>
+                var swiper = new Swiper(".mySwiper", {
+                  pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                    renderBullet: function (index, className, imagePath, planetName) {
+                        var imagePath = imagePaths[index];
+                        var planetName = planetNames[index];
+                        return '<span class="' + className + '">' + '<img src="' + imagePath + '">' + planetName + "</span>" ;
+                    },
+                  },
+                });
+              </script>
+
+            <!-- <div class="scroll-horizon">
                 <div class="page" id="sun">
                     <h2>Soleil</h2>
                     <div class="scroll-vertical">
@@ -103,9 +137,12 @@
                     </div>
                     <p>Vénus est la deuxième planète du Système solaire par ordre d'éloignement au Soleil, et la sixième plus grosse aussi bien par la masse que le diamètre. Vénus orbite autour du Soleil tous les 224,7 jours terrestres. Avec une période de rotation de 243 jours terrestres, il lui faut plus de temps pour tourner autour de son axe que toute autre planète du Système solaire. Comme Uranus, elle possède une rotation rétrograde et tourne dans le sens opposé à celui des autres planètes : le soleil s'y lève à l'ouest et se couche à l'est. Vénus possède l'orbite la plus circulaire des planètes du Système solaire avec une excentricité orbitale presque nulle et, du fait de sa lente rotation, est quasiment sphérique (aplatissement considéré comme nul). Elle ne possède pas de satellite naturel.</p>
                 </div>
-            </div>
+            </div> -->
+
+
         </section>
 
+        
 
     </main>
 
